@@ -10,17 +10,14 @@ firebase deploy
 
 deploy github
 
-1. init (по списку GitHub )
-2. git init
-3. git add .
-4. git remote add origin "НАШ РЕПОЗИТОРИЙ"
-5. git push -u origin "НАША ВЕТКА"
+React + Vite
+init (по списку GitHub ) git init git add . git remote add origin "НАШ РЕПОЗИТОРИЙ" git push -u origin "НАША ВЕТКА"
 
-npm install gh-pages --save-dev
-в package.json в scripts после "dev" add "predeploy": "npm run build", "deploy": "gh-pages -d dist",
-в vite.config add base: '/папку и именем GitHub',
-git add .
-git commit -m "comment"
-git push
-npm run deploy
-settings gh-pages
+1. npm install gh-pages --save-dev
+2. в package.json в scripts после "dev" add "predeploy": "npm run build", "deploy": "gh-pages -d dist",
+3. в vite.config add base: '/папку и именем GitHub',
+4. git add .
+5. git commit -m "comment"
+6. git push
+7. npm run deploy
+8. settings gh-pages
