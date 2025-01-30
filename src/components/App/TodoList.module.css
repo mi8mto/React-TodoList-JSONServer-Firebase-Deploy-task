@@ -1,0 +1,129 @@
+/* loader */
+.loader {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: traslate(-50%, -50%);
+	width: 25px;
+	height: 25px;
+	border: 5px solid gray;
+	border-radius: 50%;
+	border-left-color: transparent;
+	animation: loader 1s infinite;
+}
+
+@keyframes loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.app {
+	width: 350px;
+	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+h1 {
+	color: #333;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+h2 {
+	font-family: Arial, sans-serif;
+	font-size: 26px;
+	text-decoration: underline;
+	width: 350px;
+	align-items: center;
+}
+.buttons {
+	display: flex;
+}
+.button {
+	margin: 5px;
+}
+
+.todoItem {
+	background-color: #f1f1f1;
+	color: #333;
+	border-radius: 8px;
+	padding: 5px;
+	margin: 10px 0;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 340px;
+	font-size: 18px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.buttonContainer {
+	display: flex;
+}
+
+.todoItem:last-child {
+	margin-bottom: 2px;
+}
+
+.changeInput {
+	margin-bottom: 0;
+	margin-right: 5px;
+}
+
+.deleteButton {
+	width: 30px;
+	height: 30px;
+	color: rgb(223, 111, 111);
+	margin: 0;
+	margin-left: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.deleteButton:hover {
+	color: white;
+	background-color: rgb(228, 65, 65);
+}
+
+.editButton {
+	width: 30px;
+	height: 30px;
+	color: rgb(84, 183, 230);
+	margin: 0;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.editButton:hover {
+	color: white;
+	background-color: rgb(84, 183, 230);
+}
+
+input {
+	width: 90%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+button {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-bottom: 10px;
+}
